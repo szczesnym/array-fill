@@ -13,8 +13,8 @@ class ArrayOfInt {
             int minusCount = 0;
             int plusCount = 1;
             this.numbers = new int[size][size];
-            for(int i=0; i < size; i++) {
-                for(int j=0; j < size; j++){
+            for(int i = 0; i < size; i++) {
+                for(int j = 0; j < size; j++){
                     if((i + j) == (size - 1)) {
                         if((minusCount/plusCount)*100 < middleFactorBorder) {
                             numbers[i][j] = -1;
@@ -33,7 +33,7 @@ class ArrayOfInt {
     }
     public void printArray(){
         for(int i = 0; i < this.sizeOfNumbers; i++){
-            for(int j = 0; j < this.sizeOfNumbers; j++ ) {
+            for(int j = 0; j < this.sizeOfNumbers; j++) {
                 System.out.format("%4d,",this.numbers[i][j]);
             }
             System.out.println("");
@@ -42,8 +42,8 @@ class ArrayOfInt {
     public int findAndCount(int intToFind) {
         int count = 0;
         int sum = 0;
-        for(int i=0; i < this.sizeOfNumbers; i++) {
-            for(int j=0; j < this.sizeOfNumbers; j++){
+        for(int i = 0; i < this.sizeOfNumbers; i++) {
+            for(int j = 0; j < this.sizeOfNumbers; j++){
                 if (this.numbers[i][j] == intToFind) {
                     count++;
                     sum += this.numbers[i][j];

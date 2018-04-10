@@ -27,7 +27,7 @@ class ArrayOfBool {
     public int findTrueAndCount(ArrayOfInt arrayOfNumbers) {
         int sum = 0;
         if(arrayOfNumbers.getSizeOfNumbers() == this.sizeOfNumbers) {
-            for(int i = 0; i < this.sizeOfNumbers; i++){
+            for(int i = 0; i < this.sizeOfNumbers; i++) {
                 for(int j = 0; j < this.sizeOfNumbers; j++ ) {
                     if(bools[i][j]) {
                         sum += arrayOfNumbers.itemAtCord(i,j);
